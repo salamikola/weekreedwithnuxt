@@ -19,9 +19,6 @@
                         </div>
                         <div class="flex justify-around flex-wrapper">
                             <div class="flex-none toggle">
-                                    <input type="checkbox" id="toggle"  >
-                                    <label for="toggle"></label>
-                                    <span class="slider round"></span>
                                 <span> © 2022 WeekReed </span>
                             </div>
                             <div class="flex-initial flex-list">
@@ -76,6 +73,7 @@
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 10px;
+        row-gap: 10px;
     }
 
     div.flex-initial-icon {
@@ -144,6 +142,8 @@
     @media only screen and (max-width: 600px) {
         div.flex-list {
             width: 100%;
+            text-align: center;
+            margin-bottom: 5px;
         }
     }
 

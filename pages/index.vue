@@ -6,13 +6,14 @@
             <div class="flex-main-content">
                 <div class="flex-folder-parent">
                     <div class="flex-folder">
-                        <a href=""> <img src="~/assets/images/folder.png"/> Online Solution </a>
-                        <a href=""> <img src="~/assets/images/folder.png"/> Packages </a>
-                        <a href=""> <img src="~/assets/images/folder.png"/> Dev's Pers </a>
-                        <a href=""> <img src="~/assets/images/folder.png"/> Hot Takes </a>
-                        <a href=""> <img src="~/assets/images/folder.png"/> Projects </a>
-                        <a href=""> <img src="~/assets/images/folder.png"/> Concepts </a>
-                        <a href=""> <img src="~/assets/images/folder.png"/> Tutorials </a>
+                        <nuxt-link to="/"><img src="~/assets/images/grey-fold.png"/> Online Solution</nuxt-link>
+                        <nuxt-link to="/"><img src="~/assets/images/grey-fold.png"/> Packages</nuxt-link>
+                        <nuxt-link to="/"><img src="~/assets/images/grey-fold.png"/> Projects</nuxt-link>
+                        <nuxt-link to="/"><img src="~/assets/images/grey-fold.png"/> Concepts</nuxt-link>
+                        <nuxt-link to="/"><img src="~/assets/images/grey-fold.png"/> Tutorials</nuxt-link>
+                        <nuxt-link to="/about-salami-kolawole"><img class="img-file" src="~/assets/images/web-file.png"
+                                                                    alt="file"/> About.html
+                        </nuxt-link>
                     </div>
                 </div>
                 <div class="flex-about">
@@ -33,10 +34,11 @@
         list-style-image: url("~/assets/images/folder.png");
     }
 
-    div.flex-main-content{
+    div.flex-main-content {
         display: flex;
         justify-content: center
     }
+
     div.main-content {
         margin: 0 auto;
         width: 80%;
@@ -59,8 +61,8 @@
     }
 
     a > img {
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
     }
 
     .flex-folder {
@@ -94,19 +96,27 @@
         max-width: 200px;
     }
 
+    img.img-file {
+        width: 50px;
+        height: 50px;
+    }
+
     @media only screen and (max-width: 600px) {
 
-        div.flex-main-content{
+        div.flex-main-content {
             display: flex;
-            flex-direction:column;
+            flex-direction: column;
             gap: 10px;
         }
+
         p.about-note {
             max-width: 100%;
         }
-        img.profile-pic{
+
+        img.profile-pic {
             display: inline;
         }
+
         div.flex-folder > a {
             margin: 10px;
             flex-grow: 1;
